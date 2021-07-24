@@ -1,0 +1,328 @@
+
+
+
+
+
+
+
+
+[
+    {
+        "partitionKey": "TestUser15",
+        "sortKey": "2d34078e-d3e7-4e16-8e9f-170e690ae16f",
+        "username": "TestUser15",
+        "id": "2d34078e-d3e7-4e16-8e9f-170e690ae16f",
+        "firstName": "Wanda",
+        "lastName": "Maximoff",
+        "dependants": 0,
+        "expiration": "2021-08-24T18:28:36+00:00",
+        "salary": 52000.0,
+        "gross": 2000.0,
+        "benefitsCost": 38.46154,
+        "net": 1961.53845
+    },
+    {
+        "partitionKey": "TestUser15",
+        "sortKey": "dfa89c33-3764-4fd6-a48c-b32dd7ab5b38",
+        "username": "TestUser15",
+        "id": "dfa89c33-3764-4fd6-a48c-b32dd7ab5b38",
+        "firstName": "New",
+        "lastName": "Employee",
+        "dependants": 3,
+        "expiration": "2021-08-24T18:29:44+00:00",
+        "salary": 52000.0,
+        "gross": 2000.0,
+        "benefitsCost": 96.1538544,
+        "net": 1903.84619
+    }
+]
+
+
+
+Edit a user
+
+
+Call: PUT https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/api/employees
+
+Body:
+{
+   "id": "dfa89c33-3764-4fd6-a48c-b32dd7ab5b38",
+        "firstName": "New_Edit",
+        "lastName": "Employee_Edit",
+        "dependants": 3,
+        "expiration": "2021-08-24T18:29:44+00:00",
+        "salary": 53000.0,
+        "gross": 2500.0,
+        "benefitsCost": 96.1538544,
+        "net": 1903.84619
+}
+
+Response 200
+
+{
+    "partitionKey": "TestUser15",
+    "sortKey": "dfa89c33-3764-4fd6-a48c-b32dd7ab5b38",
+    "username": "TestUser15",
+    "id": "dfa89c33-3764-4fd6-a48c-b32dd7ab5b38",
+    "firstName": "New_Edit",
+    "lastName": "Employee_Edit",
+    "dependants": 3,
+    "expiration": "2021-08-24T18:29:44+00:00",
+    "salary": 53000.0,
+    "gross": 2038.46155,
+    "benefitsCost": 96.1538544,
+    "net": 1942.30774
+}
+
+Get a User: https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/api/employees/dfa89c33-3764-4fd6-a48c-b32dd7ab5b38
+
+{
+    "partitionKey": "TestUser15",
+    "sortKey": "dfa89c33-3764-4fd6-a48c-b32dd7ab5b38",
+    "username": "TestUser15",
+    "id": "dfa89c33-3764-4fd6-a48c-b32dd7ab5b38",
+    "firstName": "New_Edit",
+    "lastName": "Employee_Edit",
+    "dependants": 3,
+    "expiration": "2021-08-24T18:35:59+00:00",
+    "salary": 53000.0,
+    "gross": 2038.46155,
+    "benefitsCost": 96.1538544,
+    "net": 1942.30774
+}
+
+
+
+GET All before deletion:
+
+
+[
+    {
+        "partitionKey": "TestUser15",
+        "sortKey": "1ca4ed0e-e240-4eef-b447-cbb7b7ab05d2",
+        "username": "TestUser15",
+        "id": "1ca4ed0e-e240-4eef-b447-cbb7b7ab05d2",
+        "firstName": "New",
+        "lastName": "Employee",
+        "dependants": 3,
+        "expiration": "2021-08-24T19:17:00+00:00",
+        "salary": 52000.0,
+        "gross": 2000.0,
+        "benefitsCost": 96.1538544,
+        "net": 1903.84619
+    },
+    {
+        "partitionKey": "TestUser15",
+        "sortKey": "1f67800b-0381-454f-a597-2ece703a02fd",
+        "username": "TestUser15",
+        "id": "1f67800b-0381-454f-a597-2ece703a02fd",
+        "firstName": "New_1",
+        "lastName": "Employee_1",
+        "dependants": 4,
+        "expiration": "2021-08-24T19:17:24+00:00",
+        "salary": 52000.0,
+        "gross": 2000.0,
+        "benefitsCost": 115.384621,
+        "net": 1884.61536
+    },
+    {
+        "partitionKey": "TestUser15",
+        "sortKey": "2d34078e-d3e7-4e16-8e9f-170e690ae16f",
+        "username": "TestUser15",
+        "id": "2d34078e-d3e7-4e16-8e9f-170e690ae16f",
+        "firstName": "Wanda",
+        "lastName": "Maximoff",
+        "dependants": 0,
+        "expiration": "2021-08-24T18:28:36+00:00",
+        "salary": 52000.0,
+        "gross": 2000.0,
+        "benefitsCost": 38.46154,
+        "net": 1961.53845
+    },
+    {
+        "partitionKey": "TestUser15",
+        "sortKey": "cef084bc-3668-4e03-91f6-17d383396278",
+        "username": "TestUser15",
+        "id": "cef084bc-3668-4e03-91f6-17d383396278",
+        "firstName": "Wanda",
+        "lastName": "Maximoff",
+        "dependants": 2,
+        "expiration": "2021-08-24T19:26:14+00:00",
+        "salary": 0.0,
+        "gross": 0.0,
+        "benefitsCost": 76.92308,
+        "net": -76.92308
+    },
+    {
+        "partitionKey": "TestUser15",
+        "sortKey": "dfa89c33-3764-4fd6-a48c-b32dd7ab5b38",
+        "username": "TestUser15",
+        "id": "dfa89c33-3764-4fd6-a48c-b32dd7ab5b38",
+        "firstName": "Wanda_edit1",
+        "lastName": "Maximoff_edit1",
+        "dependants": 0,
+        "expiration": "2021-08-24T19:15:59+00:00",
+        "salary": 52000.0,
+        "gross": 2000.0,
+        "benefitsCost": 38.46154,
+        "net": 1961.53845
+    }
+]
+
+
+
+GET ALL after Deletion of 2d34078e-d3e7-4e16-8e9f-170e690ae16f
+
+[
+    {
+        "partitionKey": "TestUser15",
+        "sortKey": "1ca4ed0e-e240-4eef-b447-cbb7b7ab05d2",
+        "username": "TestUser15",
+        "id": "1ca4ed0e-e240-4eef-b447-cbb7b7ab05d2",
+        "firstName": "New",
+        "lastName": "Employee",
+        "dependants": 3,
+        "expiration": "2021-08-24T19:17:00+00:00",
+        "salary": 52000.0,
+        "gross": 2000.0,
+        "benefitsCost": 96.1538544,
+        "net": 1903.84619
+    },
+    {
+        "partitionKey": "TestUser15",
+        "sortKey": "1f67800b-0381-454f-a597-2ece703a02fd",
+        "username": "TestUser15",
+        "id": "1f67800b-0381-454f-a597-2ece703a02fd",
+        "firstName": "New_1",
+        "lastName": "Employee_1",
+        "dependants": 4,
+        "expiration": "2021-08-24T19:17:24+00:00",
+        "salary": 52000.0,
+        "gross": 2000.0,
+        "benefitsCost": 115.384621,
+        "net": 1884.61536
+    },
+    {
+        "partitionKey": "TestUser15",
+        "sortKey": "cef084bc-3668-4e03-91f6-17d383396278",
+        "username": "TestUser15",
+        "id": "cef084bc-3668-4e03-91f6-17d383396278",
+        "firstName": "Wanda",
+        "lastName": "Maximoff",
+        "dependants": 2,
+        "expiration": "2021-08-24T19:26:14+00:00",
+        "salary": 0.0,
+        "gross": 0.0,
+        "benefitsCost": 76.92308,
+        "net": -76.92308
+    },
+    {
+        "partitionKey": "TestUser15",
+        "sortKey": "dfa89c33-3764-4fd6-a48c-b32dd7ab5b38",
+        "username": "TestUser15",
+        "id": "dfa89c33-3764-4fd6-a48c-b32dd7ab5b38",
+        "firstName": "Wanda_edit1",
+        "lastName": "Maximoff_edit1",
+        "dependants": 0,
+        "expiration": "2021-08-24T19:15:59+00:00",
+        "salary": 52000.0,
+        "gross": 2000.0,
+        "benefitsCost": 38.46154,
+        "net": 1961.53845
+    }
+]
+
+
+Attempt to edit a user to 200 dependants
+CAll PUT https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/api/employees
+
+Body
+{
+    "id": "1945d706-39f3-49eb-bea8-98abcf766e5f",
+    "firstName": "Wanda",
+    "lastName": "Maximoff",
+    "dependants": 200
+    }
+
+Response 400
+Response Body
+ {
+
+        "memberNames": [
+            "Dependants"
+        ],
+        "errorMessage": "The field Dependants must be between 0 and 32."
+    }
+
+
+Attempt to edit a user to -1 dependants
+Call PUT https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/api/employees
+
+Body
+{
+    "id": "1945d706-39f3-49eb-bea8-98abcf766e5f",
+    "firstName": "Wanda",
+    "lastName": "Maximoff",
+    "dependants": -1
+    }
+
+Response 400
+Response Body
+ {
+        "memberNames": [
+            "Dependants"
+        ],
+        "errorMessage": "The field Dependants must be between 0 and 32."
+    }
+
+ 
+Create a user with the maximum amount of dependants
+Call: Post https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/api/employees
+Call body:
+{
+    "firstName": "New_2",
+    "lastName": "Employee_2",
+    "dependants": 32
+}
+
+Resposne: 200
+Response Body:
+{
+    "partitionKey": "TestUser15",
+    "sortKey": "b10dadd2-4726-4f77-9a68-b8c2238a1b6d",
+    "username": "TestUser15",
+    "id": "b10dadd2-4726-4f77-9a68-b8c2238a1b6d",
+    "firstName": "New_2",
+    "lastName": "Employee_2",
+    "dependants": 32,
+    "salary": 52000.0,
+    "gross": 2000.0,
+    "benefitsCost": 653.8462,
+    "net": 1346.15381
+}
+
+Edit above user to have 0 dependants
+Call: PUT https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/api/employees
+{
+    "id": "b10dadd2-4726-4f77-9a68-b8c2238a1b6d",
+    "firstName": "New_2",
+    "lastName": "Employee_2",
+    "dependants": 0
+    }
+CAll Body
+
+Response: 200
+Resposne Body:
+{
+    "partitionKey": "TestUser15",
+    "sortKey": "b10dadd2-4726-4f77-9a68-b8c2238a1b6d",
+    "username": "TestUser15",
+    "id": "b10dadd2-4726-4f77-9a68-b8c2238a1b6d",
+    "firstName": "New_2",
+    "lastName": "Employee_2",
+    "dependants": 0,
+    "salary": 52000.0,
+    "gross": 2000.0,
+    "benefitsCost": 38.46154,
+    "net": 1961.53845
+}
